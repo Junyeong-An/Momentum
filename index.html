@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>생산성 페이지</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="bgImageAfter"></div> <!-- 배경 이미지 구현-->
+    <div class="contatiner">
+        <h2 id="clock"></h2> <!-- 시계 구현-->
+        <form id="name-form"> <!-- 이름 출력 구현-->
+            <input required maxlength="15" type="text" placeholder="이름을 입력해 주세요!">
+            <button>Enter</button>
+        </form>
+        <h1 id="greeting"></h1>
+
+    </div>
+
+    <div class="todolist"> <!-- todo list 구현-->
+        <form id="todo-form">
+            <i class="xi-calendar-list"></i><input type="text" placeholder="To-Do List" required>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    <div id="weather"> <!-- 날씨 구현-->
+        <span></span><br>
+        <span></span>
+    </div>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>
